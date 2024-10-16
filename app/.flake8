@@ -1,5 +1,5 @@
 [flake8]
-excldue = 
+exclude = 
     migrations,
     __pychache__,
     manage.py,
