@@ -20,7 +20,7 @@ class PublicUserApiTests(TestCase):
     # Test the public features of user api.
 
     def setUp(self):
-        self.client = APIClient() # ????Why do i need this line of command????
+        self.client = APIClient() # ????Why do i need this line of code????
 
     def test_create_user_success(self):
         # Test creating a user is successfull
