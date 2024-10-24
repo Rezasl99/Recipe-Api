@@ -12,7 +12,7 @@ from core.models import Recipe
 
 from recipe.serializers import RecipeSerializer
 
-RECUPES_URL = reverse('recipe:recipe-list')
+RECIPES_URL = reverse('recipe:recipe-list')
 
 def create_recipe(user, **params):
     # create and return a sample recipe
@@ -23,7 +23,7 @@ def create_recipe(user, **params):
         'description': 'Sample description',
         'link': 'http://example.com/recipe.pdf',
     }
-    defaults.update(params)
+    default.update(params)
 
     recipe = Recipe.objects.create(user=user, **default)
     return recipe
@@ -47,8 +47,8 @@ class PrivateRecipeAPITest(TestCase):
     def setUp(self):
         self.client = APIClient()
         self.user = get_user_model().objects.create_user(
-            'email':'user@example.com',
-            'password':'testpass123',
+            email = 'user@example.com',
+            password = 'testpass123',
         )
         self.client.force_authenticate(self.user)
 
@@ -60,7 +60,7 @@ class PrivateRecipeAPITest(TestCase):
         res = self.client.get(RECIPES_URL)
 
         recipe = Recipe.objects.all().order_by('-id')
-        serializer = RecipeSerializer(recipes, many=True)
+        serializer = RecipeSerializer(recipe, many=True)
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.data, serializer.data)
 
