@@ -8,7 +8,7 @@ The Recipe API Project is a backend service for managing recipes, ingredients, a
 - CRUD operations for recipes, tags, and ingredients
 - Image upload support for recipes
 - Filter recipes by ingredients and tags
-- Test-driven development (TDD) approach Over 60 tests to insure the code is working as expected
+- Test-driven development (TDD) approach Over 60 tests to ensure the code is working as expected
 - used Swagger for API documentations
 
 ## Technologies
