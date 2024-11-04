@@ -27,11 +27,11 @@ The Recipe API Project is a backend service for managing recipes, ingredients, a
    cd Recipe-Api
    ```
  2. **Build Docker Containers**
-   ```
+   ```bash
    docker-compose build
 ```
  3. **Start the Server**
-   ```
+   ```bash
    docker-compose up
 ```
 The API doc will be available at http://localhost:8000/api/docs/#/
