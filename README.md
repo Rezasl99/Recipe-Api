@@ -21,21 +21,20 @@ The Recipe API Project is a backend service for managing recipes, ingredients, a
 
 ### Installation
 
-1. **Clone the Repository**  
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/Rezasl99/Recipe-Api.git
    cd Recipe-Api
    ```
-   Build Docker Containers
+ 2. **Build Docker Containers**
    ```
    docker-compose build
 ```
-```
-   Start the Server
+ 3. **Start the Server**
    ```
    docker-compose up
 ```
-The API will be available at http://localhost:8000/api/docs/#/
+The API doc will be available at http://localhost:8000/api/docs/#/
 
 To ensure everything is working as expected, run:
 ```bash
