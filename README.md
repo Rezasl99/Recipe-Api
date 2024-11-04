@@ -25,11 +25,19 @@ The Recipe API Project is a backend service for managing recipes, ingredients, a
    ```bash
    git clone https://github.com/Rezasl99/Recipe-Api.git
    cd Recipe-Api
-   
+   ```
+   Build Docker Containers
+   ```
    docker-compose build
+```
+```
+   Start the Server
+   ```
    docker-compose up
+```
 The API will be available at http://localhost:8000/api/docs/#/
 
 To ensure everything is working as expected, run:
+```bash
   docker-compose run --rm app sh -c "python manage.py test"
 
